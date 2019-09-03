@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const timeout = require('../util/index');
+const util = require('../util/index');
 
 ;(async function () {
   const browser = await puppeteer.launch();
@@ -26,7 +26,7 @@ const timeout = require('../util/index');
   while (aTag = aTags.shift()) {
     page = await browser.newPage();
     await page.goto(aTag.href, {waitUntil: 'networkidle0'});
-    await timeout(2000);
+    await util.timeout(2000);
     await page.pdf({path: `../es6-pdf/${aTag.name}.pdf`});
     page.close();
   }
