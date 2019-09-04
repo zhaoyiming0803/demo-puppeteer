@@ -30,4 +30,6 @@ yum install pango.x86_64 libXcomposite.x86_64 libXcursor.x86_64 libXdamage.x86_6
 
 yum install ipa-gothic-fonts xorg-x11-fonts-100dpi xorg-x11-fonts-75dpi xorg-x11-utils xorg-x11-fonts-cyrillic xorg-x11-fonts-Type1 xorg-x11-fonts-misc -y
 
+阿里云社区安装字体的帖子：https://yq.aliyun.com/articles/91153
+
 安装完以上依赖之后，重启应用，就可以了。
